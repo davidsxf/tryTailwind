@@ -1,25 +1,32 @@
-/node_modules
-/coverage
-/cli
-/lib
-/peers
-/example
-.vscode
-.DS_Store
-.parcel-cache
-tailwind.config.js
-index.html
-yarn.lock
-yarn-error.log
-types/generated/*.d.ts
+# Ignore python virtual environments
+.venv/
+venv/
 
-.turbo
+# Ignore python cache files
+__pycache__/
 
-# Perf related files
-isolate*.log
+# Ignore node files
+node_modules/
+
+
+
+# Ignore the project environment file, which could contain secrets keys and other configuration parameters.
+.env
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+# db.sqlite3
+media
+
+# Backup files # 
+*.bak 
 
 # Generated files
-/src/corePluginList.js
+.idea/**/contentModel.xml
 
-# Generated files during tests
-/tests/evaluate-tailwind-functions.test.html
+# Python # 
+*.py[cod] 
+*$py.class 
