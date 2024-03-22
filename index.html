@@ -10,5 +10,119 @@
 </head>
 <body>
     <h1 class="text-3xl">Hello world</h1>
+    <div class="flex">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+
+<div class="flex">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+
+
+<div class="flex">
+  <div class="flex-auto bg-blue-500 text-white p-4">Item 1</div>
+  <div class="flex-auto bg-green-500 text-white p-4">Item 2</div>
+  <div class="flex-auto bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-1与该类相似flex-auto但又有所不同。它确保弹性项目占用相同份额的可用空间。当您将该flex-1类应用于容器内的所有弹性项目时，它们将一起增大和缩小，从而保持相对于彼此相同的宽度。
+</p>
+
+<div class="flex">
+  <div class="flex-1 bg-blue-500 text-white p-4">Item 1</div>
+  <div class="flex-1 bg-green-500 text-white p-4">Item 2</div>
+  <div class="flex-1 bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-initial将 Flex 项目设置为其初始大小，既不允许其增大也不允许其缩小。无论容器中的可用空间如何，该项目都将保持其基本宽度。
+</p>
+<div class="flex">
+  <div class="flex-initial bg-blue-500 text-white p-4">Item 1</div>
+  <div class="flex-auto bg-green-500 text-white p-4">Item 2</div>
+  <div class="flex-auto bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-none可防止弹性项目增大或缩小。无论容器中的可用空间如何，它都将保持其初始宽度，类似于flex-initial.不同之处在于，flex-none将项目的flex-shrink属性设置为 0，确保即使容器太小而无法容纳所有项目，它也不会缩小。
+</p>
+<div class="flex">
+  <div class="flex-none bg-blue-500 text-white p-4">Item 1</div>
+  <div class="flex-auto bg-green-500 text-white p-4">Item 2</div>
+  <div class="flex-auto bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-row将该flex-direction属性设置为row，这是 Flexbox 中的默认值。当您将此类应用于 Flex 容器时，其 Flex 项目将从左到右水平排列。
+</p>
+<div class="flex flex-row">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-row-reverse将flex-direction属性设置为row-reverse。将此类应用于 Flex 容器后，Flex 项目将水平排列，但顺序相反，从右到左。
+</p>
+<div class="flex flex-row-reverse">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-col将flex-direction属性更改为column.当您在 Flex 容器上使用此类时，其 Flex 项目将从上到下垂直排列。
+</p>
+<div class="flex flex-col">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  该类flex-col-reverse将flex-direction属性设置为column-reverse
+</p>
+<div class="flex flex-col-reverse">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  flex-wrap 类将 flex-wrap 属性设置为换行。当应用于 Flex 容器时，如果没有足够的空间让 Flex 项目容纳在单行中，此类允许 Flex 项目换行到多行。
+</p>
+<div class="flex flex-wrap">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+
+<p>
+  flex-nowrap 类将 flex-wrap 属性设置为 nowrap，这是默认行为。在 Flex 容器上使用此类时，Flex 项目将被迫保留在一行上，即使没有足够的空间来容纳它们。物品可能会溢出容器。
+</p>
+
+<div class="flex flex-nowrap">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+<p>
+  flex-wrap-reverse 类将flex-wrap 属性设置为wrap-reverse。将此类应用于 Flex 容器后，Flex 项目将换行到多行，但顺序相反。项目将首先放置在最后一行，新行将添加到现有行之上。
+</p>
+<div class="flex flex-wrap-reverse">
+  <div class="bg-blue-500 text-white p-4">Item 1</div>
+  <div class="bg-green-500 text-white p-4">Item 2</div>
+  <div class="bg-red-500 text-white p-4">Item 3</div>
+</div>
+
+
 </body>
 </html>
